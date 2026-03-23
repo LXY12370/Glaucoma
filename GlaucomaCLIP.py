@@ -324,8 +324,8 @@ parser.add_argument('--fair_warmup_epochs', default=3, type=int, help='Warmup ep
 # RCS params
 # -----------------------------
 parser.add_argument('--disable_rcs', action='store_true', help='Disable RCS (default: enabled)')
-parser.add_argument('--lambda_rcs', default=0.9, type=float, help='RCS fusion weight (0~1)')
-parser.add_argument('--rcs_layers', default='5,6,7', type=str,
+parser.add_argument('--lambda_rcs', default=0.4, type=float, help='RCS fusion weight (0~1)')
+parser.add_argument('--rcs_layers', default='4,5,6,7,8', type=str,
                     help='Comma-separated mid layer indices. Default Optimized: 9,10,11')
 parser.add_argument('--rcs_pool', default='patch_mean', type=str, choices=['cls', 'patch_mean'],
                     help='Pooling after token fusion')
